@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>HTML Hyperlinks Demonstration</title>
+    </head>
+    <body>
+        <h1>HTML Hyperlinks demonstartion</h1>
+        <p>Hyperlinks in HTML are created using the <a> tag with the href attribute to specify the link
+destination. The target attribute determines how the link is opened.</p>
+        <h2>Basic Hyperlink</h2>
+        <p>visit the  <a href="https://www.google.com/">google</a> website.(opens in the same tab)</p>
+        <h2>open link in a new tab</h2>
+        <p>visit the  <a href="https://www.wikipedia.org/" target="new">wikipedia</a> website.(opens in a new tab)</p>
+        <h2>open link in parent frame</h2>
+        <p>if this page is inside a frame, visit<a href="https://www.example.com/" >example</a> in the parent frame</p>
+        <h2>open link in full window</h2>
+        <p>visit <a href="https://www.bbc.com/" target="_top">BBC News</a> to load in the full browser window</p>
+    </body>
+</html>

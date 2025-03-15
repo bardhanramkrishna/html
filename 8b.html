@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #hi {
+            background-color: rgb(0, 153, 255);
+            color: white;
+
+        }
+    </style>
+    <script>
+        function hello() {
+            var a = prompt("enter a number (1-7) for the day of the week")
+            switch (a) {
+                case "1": document.getElementById("naveen").innerHTML = "Monday";
+                    break;
+                case "2": document.getElementById("naveen").innerHTML = "Tuesday";
+                    break;
+                case "3": document.getElementById("naveen").innerHTML = "Wednesday";
+                    break;
+                case "4": document.getElementById("naveen").innerHTML = "Thursday";
+                    break;
+                case "5": document.getElementById("naveen").innerHTML = "Friday";
+                    break;
+                case "6": document.getElementById("naveen").innerHTML = "Saturday";
+                    break;
+                case "7": document.getElementById("naveen").innerHTML = "Sunday";
+                    break;
+                default: alert("enter correct number");
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1><b>Week Days Using Switch Case</b></h1>
+    <button id="hi">Enter Number</button>
+    <button onclick="hello()" id="naveen">click the button to enter a number</button>
+</body>
+
+</html>

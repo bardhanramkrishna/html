@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script>
+            function hi(){
+                var a=prompt("enter the number");
+                 var fact=1;
+                for(let i=1;i<=a;i++){
+                    fact=fact*i;
+                }
+                document.getElementById("naveen").innerHTML="factorial of "+a+"is"+fact;
+
+            }
+            function hello(){
+                var b = prompt("Enter the number");
+                function fib(n) {
+                    if (n <= 1) {
+                        return n;
+                    } else {
+                        return fib(n - 1) + fib(n - 2);
+                    }
+                }
+
+                var fibSequence = [];
+                for (let i = 0; i < b; i++) {
+                    fibSequence.push(fib(i));
+                }
+
+                document.getElementById("naveen").innerHTML = "Fibonacci series up to " + b + " terms: " + fibSequence.join(", ");
+            }
+            function ouy() {
+              var c=prompt("enter the number");
+              
+             
+              var he=[];
+              for(let i=2;i<=c;i++){
+                var count=0;
+                for(let j=1;j<=i;j++){
+                  if(i%j==0){
+                  count++;
+                }
+              }
+                if(count==2){
+                  he.push(i);
+                }
+            
+            }
+              
+              document.getElementById("naveen").innerHTML = "Prime numbers up to " + c + ": " + he.join(", ");
+              
+            }
+        
+        </script>
+    </head>
+    <body>
+        <h1><b>javascirpt functions</b></h1>
+        <button onclick="hi()">Find Factorial</button>
+        <button onclick="hello()">Fibinocci series</button>
+        <button onlick="ouy()">prime numbers</button>
+        <button onclick="hmm()">check palindrome</button>
+        <button id="naveen">check a button to see a result</button>
+    </body>
+</html>

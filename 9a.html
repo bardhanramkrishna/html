@@ -1,5 +1,18 @@
 <html>
     <head>
+      <style>
+        button{
+          background-color: blue;
+          color:white;
+        }
+        #naveen{
+          padding: 10px;
+          color:blue;
+          
+          border:2px solid blue;
+          background-color:transparent;
+        }
+      </style>
         <script>
             function hi(){
                 var a=prompt("enter the number");
@@ -48,6 +61,20 @@
               document.getElementById("naveen").innerHTML = "Prime numbers up to " + c + ": " + he.join(", ");
               
             }
+            
+            function hmm(){
+              var d=prompt("enter the number");
+              var rev=0;
+              pali=d;
+              while(d!=0){
+                let rem=d%10;
+                rev=rev*10+rem;
+                d=Math.floor(d/10);
+              }
+              if(pali==rev){
+              document.getElementById("naveen").innerHTML=rev+"is a palindrome";
+            }
+            }
         
         </script>
     </head>
@@ -55,7 +82,7 @@
         <h1><b>javascirpt functions</b></h1>
         <button onclick="hi()">Find Factorial</button>
         <button onclick="hello()">Fibinocci series</button>
-        <button onlick="ouy()">prime numbers</button>
+        <button onclick="ouy()">prime numbers</button>
         <button onclick="hmm()">check palindrome</button>
         <button id="naveen">check a button to see a result</button>
     </body>

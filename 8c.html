@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      button{
+        background-color: blue;
+        color:white;
+      }
+      #naveen{
+        background-color: transparent;
+        color:blue;
+        padding:10px;
+      }
+    </style>
+    <script>
+      function hi(){
+        var a=10;
+        var nav=[];
+        for(let i=1;i<=a;i++){
+          nav.push(i);
+        }
+        document.getElementById("naveen").innerHTML="using for loop:"+nav.join(", ");
+      }
+      function hello(){
+        var a=10;
+        var i=1;
+        var nav=[];
+        while(i<=a){
+          nav.push(i);
+          i++;
+          
+        }
+        document.getElementById("naveen").innerHTML="using for while-loop:"+nav.join(", ");
+      }
+      function hehe(){
+        var a=10;
+        var i=1;
+        var nav=[];
+        do{
+          nav.push(i);
+          i++;
+        }while(i<=a);
+         document.getElementById("naveen").innerHTML="using for do-while loop:"+nav.join(", ");
+      }
+    </script>
+  </head>
+  <body>
+    <h1><b>print numbers 1 to 10 using loop</b></h1>
+    <button onclick="hi()">For Loop</button>
+    <button onclick="hello()">While Loop</button>
+    <button onclick="hehe()">Do-while Loop</button>
+    <button  id="naveen">click a button to print numbers</button>
+    
+  </body>
+</html>

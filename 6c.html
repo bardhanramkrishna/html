@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+      div{
+        text-align: center;
+       margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+       
+      }
+    </style>
+    <script>
+      function hi(){
+        var a=prompt("please enter some text");
+        document.getElementById("naveen").innerHTML="you entered:"+a;
+      }
+      function hello(){
+        var hm=document.getElementById("nd").value;
+        document.getElementById("naveen").innerHTML="you entered:"+hm;
+      }
+      function hehe(){
+        let kk=confirm("do you like this code");
+        document.getElementById("naveen").innerHTML="your response:"+(kk ? "yes" : "no" );
+      }
+      function ouy(){
+        let mm=document.getElementById("nd").value;
+        document.getElementById("naveen").innerHTML="you entered"+mm;
+      }
+    </script>
+  </head>
+  <body>
+    <h1><b>JavaScript Input Methods</b></h1>
+    <button onclick="hi()">Prompt Input</button>
+    <button onclick="hello()">Form Input</button>
+    <button onclick="hehe()">Confirm Input</button>
+    <div id="naveen">You entered:</div>
+    <label for="nd">Enter something</label>
+    <input type="text" id="nd">
+    <button onclick="ouy()">Get Textbox Input</button>
+  </body>
+</html>

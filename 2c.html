@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <style>
+      body{
+        text-align: center;
+      }
+      th,td{
+        text-align: left;
+        padding:10px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+    <table border="1">
+    <caption>Fill your details</caption>
+    <tr>
+      <th>Full Name:</th>
+      <td><input type="text" placeholder="enter your full name" name="fullname" size="30"></td>
+    </tr>
+    <tr>
+      <th>Password:</th>
+      <td><input type="password" placeholder="enter your password" name="password"</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td><input type="number" min="1" max="100" name="age" required></td>
+    </tr>
+    <tr>
+      <th>Date Of Birth</th>
+      <td><input type="date" name="date" ></td>
+    </tr>
+    <tr>
+      <th>Gender:</th>
+      <td>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other
+      </td>
+    </tr>
+    <tr>
+      <th>Hobbies:</th>
+      <td>
+        <input type="checkbox" name="check">Reading<br>
+        <input type="checkbox" name="check">Sports<br>
+        <input type="checkbox" name="check">Travelling
+      </td>
+    </tr>
+    <tr>
+      <th>Country:</th>
+      <td>
+        <select size="1" placeholder="Select your country">
+          <option>India</option>
+          <option>pakistan</option>
+          <option>australia</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>About Yourself:</th>
+      <td>
+        <textarea rows="5" cols="25">Write about Yourself...</textarea>
+      </td>
+    </tr>
+      
+    </table>
+    </form>
+  </body>
+</html>
